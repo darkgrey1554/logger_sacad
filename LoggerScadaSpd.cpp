@@ -59,7 +59,7 @@ namespace LoggerSpaceScada
 
 		LoggerScadaSpd::~LoggerScadaSpd() { return; };
 
-		void LoggerScadaSpd::call_info_logger(std::string str)
+		void LoggerScadaSpd::call_info_logger(std::string& str)
 		{
 			try
 			{
@@ -71,7 +71,7 @@ namespace LoggerSpaceScada
 
 		}
 
-		void LoggerScadaSpd::call_debug_logger(std::string str)
+		void LoggerScadaSpd::call_debug_logger(std::string& str)
 		{
 			try
 			{
@@ -82,7 +82,7 @@ namespace LoggerSpaceScada
 			}
 		}
 
-		void LoggerScadaSpd::call_warning_logger(std::string str)
+		void LoggerScadaSpd::call_warning_logger(std::string& str)
 		{
 			try
 			{
@@ -93,7 +93,7 @@ namespace LoggerSpaceScada
 			}
 		}
 
-		void LoggerScadaSpd::call_critical_logger(std::string str)
+		void LoggerScadaSpd::call_critical_logger(std::string& str)
 		{
 			try
 			{

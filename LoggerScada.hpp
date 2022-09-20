@@ -48,13 +48,13 @@ namespace LoggerSpaceScada
 	{
 	protected:
 
-		virtual void call_info_logger(std::string str) = 0;
-		virtual void call_debug_logger(std::string str) = 0;
-		virtual void call_warning_logger(std::string str) = 0;
-		virtual void call_critical_logger(std::string str) = 0;
+		virtual void call_info_logger(std::string& str) = 0;
+		virtual void call_debug_logger(std::string& str) = 0;
+		virtual void call_warning_logger(std::string& str) = 0;
+		virtual void call_critical_logger(std::string& str) = 0;
 
 		ILoggerScada();
-		~ILoggerScada();
+		virtual ~ILoggerScada();
 
 	public:
 

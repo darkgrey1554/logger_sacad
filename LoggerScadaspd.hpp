@@ -12,10 +12,10 @@ namespace LoggerSpaceScada
 		{
 		protected:
 
-			void call_info_logger(std::string str);
-			void call_debug_logger(std::string str);
-			void call_warning_logger(std::string str);
-			void call_critical_logger(std::string str);		
+			void call_info_logger(std::string& str) override;
+			void call_debug_logger(std::string& str) override;
+			void call_warning_logger(std::string& str) override;
+			void call_critical_logger(std::string& str) override;
 
 			LoggerScadaSpd() = delete;			
 
