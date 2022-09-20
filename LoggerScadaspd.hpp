@@ -3,7 +3,7 @@
 #include "spdlog/sinks/rotating_file_sink.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
-
+// test
 namespace LoggerSpaceScada
 {
 	namespace LoggerSpd
@@ -17,7 +17,7 @@ namespace LoggerSpaceScada
 			void call_warning_logger(std::string& str) override;
 			void call_critical_logger(std::string& str) override;
 
-			LoggerScadaSpd() = delete;			
+			LoggerScadaSpd() = delete;
 
 			std::string namelog = "LoggerScadaSpd";
 			static std::mutex mutex_lock;
@@ -36,7 +36,7 @@ namespace LoggerSpaceScada
 			ResultReqest SetLevel(LevelLog level) override;
 			ResultReqest SetFileSize(size_t size_MB) override;
 			ResultReqest SetFileNumber(size_t number) override;
-		
+
 		};
 	}
 }
